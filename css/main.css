@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+html {
+    --mc: #0d6efd;
+    /* --gc: #595a6c; */
+    /* --gc: #495057; */
+    --gc: #6c757d;
+    --lc: #dddddd;
+    --wc: #f9f9f9;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #343a40;
+}
+
+/* a 링크 컬러 제거 */
+a {
+    color: inherit;
+}
+
+ol {
+    list-style: none;
+}
+
+p {
+    line-height: 1.45;
+    word-wrap: keep-all;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* .slick-list */
+.slick-track,
+.slick-slide {
+    transition-delay: 10ms;
+}
+
+
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+/* 섹션의 p에만 잡아줬고 1문장만 쓴다 생각했다. */
+.section p.title {
+    line-height: 1;
+    font-size: 17px;
+    margin: 0 0 40px 0;
+}
+
+
+
+.Wrap {}
+
+.top_slogan {
+    border-bottom: 1px solid var(--lc);
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.top_slogan>ul {
+    justify-content: space-between;
+}
+
+.header {
+    line-height: 100px;
+    border-bottom: 1px solid var(--lc);
+}
+
+.header h1 {
+    font-size: 0;
+}
+
+.header .flex {
+    justify-content: space-between;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main_visual {
+    position: relative;
+}
+
+.main_visual .main_slide figure {
+    height: 700px;
+}
+
+.main_visual .main_slide .itm01 {
+    background: url(../img/main01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .itm02 {
+    background: url(../img/main01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .itm03 {
+    background: url(../img/main01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .slogan {
+    position: absolute;
+    width: 1200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--wc);
+
+}
+
+.main_visual .slogan h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+
+}
+
+.main_visual .slogan p {
+    font-size: 24px;
+}
+
+.sub_page {}
+
+.sub_page .page {
+    background: var(--mc);
+    color: var(--wc);
+    line-height: 40px;
+}
+
+.sub_page .page ol {
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.sub_page article {
+    flex: 1;
+    padding: 40px 50px 40px 0;
+    /* 넘치는 슬라이드 잡아주는 방법 */
+    overflow: hidden;
+}
+
+.sub_page article h3 {
+    line-height: 60px;
+    border-bottom: 1px solid var(--lc);
+    font-size: 18px;
+    margin: 0 0 50px 0;
+}
+
+.sub_page aside {
+    width: 300px;
+    padding: 40px 0 0 40px;
+    border-left: 1px solid var(--lc);
+    /* 오른쪽 네비게이션은 사이즈 유지해주는 것이 좋다.  */
+    min-height: 600px;
+}
+
+.sub_page .lnb li {
+    line-height: 40px;
+    border-bottom: 1px solid var(--lc);
+}
+
+.sub_page .lnb li.on {
+    background: var(--mc);
+    color: var(--wc);
+}
+
+
+.footer {
+    border-top: 1px solid var(--lc);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer ul {
+    margin: 0 0 20px 0;
+}
+
+.footer li {
+    margin: 0 0 10px 0;
+}
+
+.footer address {
+    font-size: 14px;
+}
