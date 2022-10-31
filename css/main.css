@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
+/* * {
+    outline: 1px solid #f00;
+} */
+
 html {
     --mc: #0d6efd;
     /* --gc: #595a6c; */
@@ -71,31 +75,62 @@ figure {
     margin: 0 0 40px 0;
 }
 
-
-
-.Wrap {}
-
 .top_slogan {
-    border-bottom: 1px solid var(--lc);
-    line-height: 1.8;
+    line-height: 40px;
     font-size: 14px;
+    background: #ddd;
+    /* border-bottom: 1px solid rgb(221, 221, 221, 0.1); */
 }
 
 .top_slogan>ul {
     justify-content: space-between;
 }
 
-.header {
-    line-height: 100px;
-    border-bottom: 1px solid var(--lc);
+.Wrap {
+    position: relative;
+    overflow: hidden;
 }
 
-.header h1 {
-    font-size: 0;
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 100px);
+    /* transform: translateX(-50%); */
+    line-height: 100px;
+    margin: 0 50px;
+    z-index: 999;
+    border-bottom: 1px solid rgb(221, 221, 221, 0.3);
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: -500px;
+    width: 500px;
+    height: 1px;
+    background: rgb(221, 221, 221, 0.3);
+    z-index: 999;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    right: -500px;
+    width: 500px;
+    height: 1px;
+    background: rgb(221, 221, 221, 0.3);
+    z-index: 999;
 }
 
 .header .flex {
     justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 0;
 }
 
 .header .gnb>ul {
@@ -103,14 +138,38 @@ figure {
     gap: 40px;
     font-size: 18px;
     font-weight: 500;
+    color: #f9f9f9;
 }
+
+.header .personal {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.header .personal>li a {
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 20px;
+    background-color: var(--lc);
+    border-radius: 15px;
+}
+
+.header .personal>li:first-child a {
+    background-color: var(--mc);
+    color: #f9f9f9;
+}
+
 
 .main_visual {
     position: relative;
+    overflow: hidden;
+    font-size: 0;
 }
 
 .main_visual .main_slide figure {
-    height: 700px;
+    height: 750px;
 }
 
 .main_visual .main_slide .itm01 {
@@ -118,11 +177,7 @@ figure {
 }
 
 .main_visual .main_slide .itm02 {
-    background: url(../img/main01.jpg) no-repeat center center/cover;
-}
-
-.main_visual .main_slide .itm03 {
-    background: url(../img/main01.jpg) no-repeat center center/cover;
+    background: url(../img/main02.jpg) no-repeat center center/cover;
 }
 
 .main_visual .slogan {

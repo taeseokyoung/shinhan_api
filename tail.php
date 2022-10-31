@@ -6,10 +6,11 @@ if (G5_IS_MOBILE) {
     return;
 }
 
-if (G5_COMMUNITY_USE === false) {
-    include_once(G5_THEME_SHOP_PATH . '/shop.tail.php');
-    return;
-}
+// if (G5_COMMUNITY_USE === false) {
+//     include_once(G5_THEME_SHOP_PATH . '/shop.tail.php');
+//     return;
+// }
+// 
 ?>
 
 <?php
@@ -20,8 +21,8 @@ if (!defined('_INDEX_')) { // index가 아닐 때 실행
 
 <footer class="footer">
     <ul>
-        <li>주소 : <?= $sh_address ?>&nbsp;&nbsp;메일 : <?= $sh_email ?></li>
-        <li>대표전화 : <?= $sh_tel ?>&nbsp;&nbsp;Fax : <?= $sh_fax ?></li>
+        <li>주소 : <?= $sh_address ?></li>
+        <li>대표전화 : <?= $sh_tel ?>&nbsp;&nbsp;메일 : <?= $sh_email ?>&nbsp;&nbsp;Fax : <?= $sh_fax ?></li>
     </ul>
     <address>
         copyright &copy; <?= $sh_title ?> allrights reserved.

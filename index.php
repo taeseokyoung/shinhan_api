@@ -7,10 +7,10 @@ if (G5_IS_MOBILE) {
     return;
 }
 
-if (G5_COMMUNITY_USE === false) {
-    include_once(G5_THEME_SHOP_PATH . '/index.php');
-    return;
-}
+// if (G5_COMMUNITY_USE === false) {
+//     include_once(G5_THEME_SHOP_PATH . '/index.php');
+//     return;
+// }
 
 include_once(G5_THEME_PATH . '/head.php');
 ?>
@@ -22,7 +22,6 @@ include_once(G5_THEME_PATH . '/head.php');
         <div class="main_slide">
             <figure class="itm01">이미지1</figure>
             <figure class="itm02">이미지2</figure>
-            <figure class="itm03">이미지3</figure>
         </div>
         <div class="slogan">
             <h2>신한금융그룹<br />
@@ -36,7 +35,7 @@ include_once(G5_THEME_PATH . '/head.php');
         echo latest("latest_01", 게시판명, 5, 25); -->
 
 
-        <? echo latest("theme/main_photo", "gallery", 5, 25); ?>
+        <? echo latest("theme/main_web", "notice", 5, 25); ?>
         <? echo latest("theme/main_web", "qa", 5, 25); ?>
 
     </div>

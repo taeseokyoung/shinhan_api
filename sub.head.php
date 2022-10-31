@@ -1,6 +1,5 @@
     <!-- main과 분리되어있다는 표시 ** -->
     <div class="sub_page">
-
         <div class="page">
             <!-- ol 서브네비라서 분리한다고 다른 태그를 사용해준 것 -->
             <ol class="inner flex">

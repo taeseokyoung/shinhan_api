@@ -1,0 +1,4 @@
+absolute, padding
+a float right
+
+이미지123 mainslide에 fontsize 0
